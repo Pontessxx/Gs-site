@@ -1,3 +1,44 @@
-h2 {
-    color: white;
+.home-sec{
+    margin: 10px;
+    h2 {
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p{
+        color: white;
+        text-align: justify;
+
+    }
+    .card-imagem img{
+        height: 300px;
+        width: 100%;
+    }
+    .box-baixo{
+        display: flex;
+        h2{
+            padding: 10px;
+        }
+        p{
+            margin: 10px;
+            font-size: 1.3rem;
+            width: 100%;
+        }
+    }
+    .box-btn-info{
+        height: 20px;
+        margin: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: end;
+      
+    }
+    .box-btn-info a{
+        font-size: 1rem;
+        border-radius: 5px;
+        background-color: #75777b;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
 }
