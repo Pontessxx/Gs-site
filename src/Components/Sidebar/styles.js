@@ -24,6 +24,8 @@ export const Container = styled.div`
     color: white;
     display: flex;
     text-decoration: none;
+  } a&:hover {
+    background-color: #2c303a; /* Altere a cor conforme necessário */
   }
 
   @keyframes showSidebar {
@@ -41,4 +43,5 @@ export const Container = styled.div`
 export const Content = styled.div`
   margin-top: 100px;
   // border: 1px solid yellow;
+ 
 `;
