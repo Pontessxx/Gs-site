@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: #171923;
+  // border: 1px solid red;
   position: fixed;
   height: 100%;
   top: 0px;
@@ -19,6 +20,11 @@ export const Container = styled.div`
     margin-left: 32px;
     cursor: pointer;
   }
+  a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+  }
 
   @keyframes showSidebar {
     from {
@@ -34,4 +40,5 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin-top: 100px;
+  // border: 1px solid yellow;
 `;

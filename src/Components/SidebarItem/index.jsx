@@ -5,12 +5,14 @@ import { Container } from './styles';
 
 const SidebarItem = ({ Icon, to, Text }) => {
   return (
-    <Container>
-      <Link to={to}>
-        <Icon />
-        {Text}
-      </Link>
-    </Container>
+    <Link to={to}>
+        <Container>
+        
+            <Icon />
+            {Text}
+        
+        </Container>
+    </Link>
   );
 };
 
