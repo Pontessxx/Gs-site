@@ -16,7 +16,7 @@ const Home = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quo minima ducimus eveniet placeat explicabo obcaecati inventore assumenda eos?</p>
         </div>
         <div className='box-btn-info'>
-          <Link to ='/statistics'>Mais informações</Link>
+          <Link to ='/users'>Mais informações</Link>
         </div>
       </div>
       <div className='box-direito'>
@@ -36,6 +36,7 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <h1>Vantagens</h1>
     <Vantagens/>
   </>
   )

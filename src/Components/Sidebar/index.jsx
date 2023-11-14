@@ -17,13 +17,13 @@ const Sidebar = ({ active }) => {
       <FaTimes onClick={closeSidebar} />
       <Content>
         <SidebarItem Icon={FaHome} to="/" Text="Home"  onClick={handleItemClick}/>
-        <SidebarItem Icon={FaChartBar} to="/statistics" Text="Statistics"  onClick={handleItemClick} />
+        {/* <SidebarItem Icon={FaChartBar} to="/statistics" Text="Statistics"  onClick={handleItemClick} /> */}
         <SidebarItem Icon={FaUserAlt} to="/users" Text="Users"  onClick={handleItemClick}/>
-        <SidebarItem Icon={FaEnvelope} to="/mail" Text="Mail"  onClick={handleItemClick}/>
+       {/*  <SidebarItem Icon={FaEnvelope} to="/mail" Text="Mail"  onClick={handleItemClick}/>
         <SidebarItem Icon={FaRegCalendarAlt} to="/calendar" Text="Calendar"  onClick={handleItemClick}/>
         <SidebarItem Icon={FaIdCardAlt} to="/employees" Text="Employees"  onClick={handleItemClick}/>
         <SidebarItem Icon={FaRegFileAlt} to="/reports" Text="Reports"  onClick={handleItemClick}/>
-        <SidebarItem Icon={FaRegSun} to="/settings" Text="Settings"  onClick={handleItemClick}/>
+        <SidebarItem Icon={FaRegSun} to="/settings" Text="Settings"  onClick={handleItemClick}/> */}
       </Content>
     </Container>
   );
