@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from '../../Pages/Home/Home'
 const Statistics = () => <h2>Statistics</h2>;
-const Users = () => <h2>Users</h2>;
+import Login from '../../Pages/Login'
 const Mail = () => <h2>Mail</h2>;
 const Calendar = () => <h2>Calendar</h2>;
 const Employees = () => <h2>Employees</h2>;
@@ -31,7 +31,7 @@ const Navbar = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/statistics" element={<Statistics />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="/users" element={<Login />} />
           <Route path="/mail" element={<Mail />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/employees" element={<Employees />} />
