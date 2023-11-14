@@ -1,12 +1,13 @@
 import React from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom';
+import Vantagens from '../../Components/Vantagens'
 const Home = () => {
   return (
     <>
     <section className='home-sec'>
       <div className="home-div">
-        <h2>Global Soluction 2023 - Engenharia de Software</h2>
+        {/* <h2>Global Soluction 2023 - Engenharia de Software</h2> */}
         <div className='card-imagem'>
           <img src="../../public/bg.jpg" alt="imagem-home" />
         </div>
@@ -35,6 +36,7 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <Vantagens/>
   </>
   )
 }

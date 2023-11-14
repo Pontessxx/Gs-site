@@ -1,0 +1,29 @@
+.box-vants{
+    display: flex;
+    justify-content: space-evenly;
+    .box-um{
+        display: flex;
+        .card-imagem{
+            padding: 10px;
+        }
+        .card-imagem img{
+            height: 100px;
+            width: 110px;
+        }
+        .text{
+            padding: 10px;
+            width: 35%;
+            color: #fff;
+            h3{
+                margin-bottom: 5px;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    }
+    @media (max-width:850px) { 
+        flex-direction: column;
+        
+    }
+}

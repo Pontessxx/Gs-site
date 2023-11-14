@@ -12,7 +12,7 @@
 
     }
     .card-imagem img{
-        height: 300px;
+        height: 250px;
         width: 100%;
     }
     .box-baixo{
@@ -62,6 +62,7 @@
         }
     }
     @media (max-width: 768px) {
+        flex-direction: column;
         h2 {
           font-size: 1.2rem;
         }
@@ -71,6 +72,7 @@
         }
   
         .box-baixo {
+          padding: 10px;
           h2 {
             font-size: 1.2rem;
           }
@@ -85,13 +87,24 @@
         }
   
         .box-direito {
+          padding: 10px;
           h3 {
             font-size: 1.3rem;
           }
-  
+          hr{
+            width: 150px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 200px;
+          }
           p {
             font-size: 1rem;
           }
+        }
+        .box-um,
+        .box-dois,
+        .box-tres{
+          padding: 10px;
         }
     }
 }
