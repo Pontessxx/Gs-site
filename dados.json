@@ -2,7 +2,7 @@
     "usuarios": [
       {
         "id": 1,
-        "nome": "Médico 1",
+        "nome": "Medico",
         "email": "medico1@example.com",
         "senha": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
         "papel": "medico",
@@ -11,7 +11,7 @@
       },
       {
         "id": 2,
-        "nome": "Recepcionista 1",
+        "nome": "Recepcionista",
         "email": "recepcionista1@example.com",
         "senha": "b3a8e0e1f9ab1bfe3a36f231f676f78bb30a519d2b21e6c530c0eee8ebb4a5d0",
         "papel": "recepcionista",
