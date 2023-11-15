@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Login/Login.scss";
 
 function Homelog() {
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [reloadFlag, setReloadFlag] = useState(false);
 
   const logout = () => {
     localStorage.removeItem("signUp");
-    window.location.reload();
+    setReloadFlag(true);
   };
 
   const deleteAccount = () => {
     localStorage.clear();
-    window.location.reload();
+    setReloadFlag(true);
   };
+
+  useEffect(() => {
+    if (reloadFlag) {
+      window.location.reload();
+    }
+  }, [reloadFlag]);
 
   const procuraNoDadosJson = async () => {
     try {
@@ -66,9 +73,6 @@ function Homelog() {
           <p>
             Usuário: <span>{localStorage.getItem("name")}</span>
           </p>
-          <p>
-            Cargo: <span>{localStorage.getItem("cargo")}</span>
-          </p>
         </div>
         <div className="btn-log">
           <button onClick={logout} className="logout">
@@ -80,6 +84,7 @@ function Homelog() {
         </div>
       </div>
       <div className="input_pesquisa">
+        <h2>Pesquisar paciente: </h2>
         <input
           type="text"
           placeholder="Pesquise pelo paciente"
@@ -90,23 +95,25 @@ function Homelog() {
       </div>
       <div className="resultados-pesquisa">
         <h2>Resultados da Pesquisa:</h2>
-        <ul>
-          {searchResults.map((paciente) => (
-            <li key={paciente.id}>
-              <p>Nome: {paciente.nome}</p>
-              <p>Idade: {paciente.idade}</p>
-              <p>Exames:</p>
-              <ul>
-                {paciente.exames.map((exame) => (
-                  <li key={exame.id}>
-                    <p>Tipo: {exame.tipo}</p>
-                    <p>Resultado: {exame.resultado}</p>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+        <div className="list">
+            <ul>
+            {searchResults.map((paciente) => (
+                <li key={paciente.id}>
+                <p>Nome: {paciente.nome}</p>
+                <p>Idade: {paciente.idade}</p>
+                <p>Exames:</p>
+                <ul>
+                    {paciente.exames.map((exame) => (
+                    <li key={exame.id}>
+                        <p>Tipo: {exame.tipo}</p>
+                        <p>Resultado: {exame.resultado}</p>
+                    </li>
+                    ))}
+                </ul>
+                </li>
+            ))}
+            </ul>
+        </div>
       </div>
     </section>
   );

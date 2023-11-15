@@ -32,10 +32,10 @@ const index = () => {
                         <h3>Desenvolvedores</h3>
                     </li>
                     <li>
-                        <Link to="https://github.com/Pontessxx" class="footer-link">Henrique Pontes Oliveira</Link>
+                        <Link to="https://github.com/Pontessxx" className="footer-link">Henrique Pontes Oliveira</Link>
                     </li>
                     <li>
-                        <Link to="#" class="footer-link">Guilherme Brazioli</Link>
+                        <Link to="#" className="footer-link">Guilherme Brazioli</Link>
                     </li>
                     
                 </ul>

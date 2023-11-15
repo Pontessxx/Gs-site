@@ -78,4 +78,29 @@ button{
             background-color: #670c0c;
         }
     }
+    .input_pesquisa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: #ffffff;
+        }
+        margin-bottom: 40px;
+    }
+    .input_pesquisa input{
+        background-color: #c9c8c8;
+        width: 500px;
+    }
+}
+.resultados-pesquisa{
+    color: #3f9bc6;
+   margin: 10px;
+}
+.resultados-pesquisa .list{
+    border: 5px solid #3f9bc6;
+    border-radius: 10px;
+    margin: 10px;
+    ul{
+        list-style: none;
+    }
 }
