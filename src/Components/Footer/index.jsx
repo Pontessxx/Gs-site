@@ -7,8 +7,7 @@ const index = () => {
         <footer>
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <h1>Logo</h1>
-                    <p>Slogam vem bem aq</p>
+                    <img src="./health_id.png" alt="" srcset="" />
 
                    {/*  <div id="footer_social_media">
                         <Link to="#" class="footer-link" id="instagram">
