@@ -16,6 +16,7 @@
 }
 input{
     height: 30px;
+    width: 400px;
     margin: 10px;
     width: 20%;
     font-size: 18px;
@@ -102,5 +103,31 @@ button{
     margin: 10px;
     ul{
         list-style: none;
+    }
+}
+@media (max-width:768px) {
+    input{
+        width: 400px;
+    }
+}
+@media (max-width:425px) {
+    input{
+        width: 250px;
+    }
+    .input_pesquisa{
+       h2{
+        font-size: 0.8rem;
+       }
+    }
+}
+@media (max-width:375px) {
+    input{
+        width: 250px;
+    }
+    .input_pesquisa{
+       h2{
+        font-size: 0.8rem;
+       }
+       
     }
 }
