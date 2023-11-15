@@ -23,23 +23,59 @@ input{
 button{
     height: 30px;
     width: 15%;
-    background-color:grey;
+    background-color:#6d6c6c;
     border: none;
     transition: background .3s ease-in;
     &:hover {
         cursor: pointer;
         color: #fff;
-        background-color: #13678e;
+        background-color: #3f9bc6;
       }
 }
-.logout{
-    margin-right: 5px;
-    color: white;
-    font-weight: 400;
-}
-.delete{
-    margin-right: 5px;
-    color: white;
-    background-color: #13678e;
-    font-weight: 400;
+
+.Homelog-sec{
+    margin: 10px;
+    .credencial-log{
+        border: 5px solid #6d6c6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        // flex-direction: column;
+        .btn-log{margin: 10px;
+            margin-left: 60px;
+            button{
+                margin: 5px;
+            }
+        }
+    }
+    p{
+        color: #fff;
+        margin: 10px;
+    }
+    span{
+        font-size: 1.2rem;
+        color: #3f9bc6;
+    }
+    .logout{
+        margin-right: 5px;
+        color: #fff;
+        font-weight: 400;
+        border-radius: 5px;
+        width: 60px;
+        &:hover{
+            background-color: #d2bf0e;
+        }
+    }
+    .delete{
+        margin-right: 5px;
+        color: #fff;
+        background-color: #d20e0e;
+        font-weight: 400;
+        border-radius: 5px;
+        width: 60px;
+        &:hover{
+            background-color: #670c0c;
+        }
+    }
 }
