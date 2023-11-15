@@ -1,5 +1,6 @@
 import React from "react";
 import '../Login/Login.scss';
+// Esta pagina aparece após realizar o cadastro, seria a homepage do site com a conta do usuário
 function Homelog(){
     const logout=()=>{
         localStorage.removeItem("signUp")

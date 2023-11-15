@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import './Navbar.scss';
 import Sidebar from '../Sidebar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import Footer from '../../Components/Footer'
 import Home from '../../Pages/Home/Home'
 const Statistics = () => <h2>Statistics</h2>;
 import Login from '../../Pages/Login'
@@ -17,7 +17,7 @@ const Settings = () => <h2>Settings</h2>;
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
-
+  
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
@@ -26,6 +26,9 @@ const Navbar = () => {
         <Container>
           <FaBars onClick={showSidebar} />
           {sidebar && <Sidebar active={setSidebar} />}
+          <div className="cabecalho">
+            <h2>Global Soluction 2023 - Engenharia de Software</h2>
+          </div>
         </Container>
 
         <Routes>
@@ -38,6 +41,7 @@ const Navbar = () => {
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
+        <Footer/>
       </>
     </Router>
   );

@@ -1,13 +1,22 @@
 
 .container{
+    h1{
+        color: #fff;
+        margin: 10px 10px 20px;
+    }
     text-align: center;
     margin-top: 100px;
+    label{
+        color: #fff;
+        margin: 10px 5px;
+    }
 }
 .input_space{
     margin-bottom: 10px;
 }
 input{
     height: 30px;
+    margin: 10px;
     width: 20%;
     font-size: 18px;
 }
@@ -16,6 +25,12 @@ button{
     width: 15%;
     background-color:grey;
     border: none;
+    transition: background .3s ease-in;
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #13678e;
+      }
 }
 .logout{
     margin-right: 5px;
@@ -25,6 +40,6 @@ button{
 .delete{
     margin-right: 5px;
     color: white;
-    background-color: rgb(19, 103, 142);
+    background-color: #13678e;
     font-weight: 400;
 }
