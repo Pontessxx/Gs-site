@@ -64,6 +64,13 @@ function SignInSignupWithLocalStorage() {
       localStorage.setItem("signUp", email.current.value);
       // Adicionar especialidade ao localStorage
       localStorage.setItem("especialidade", especialidade.current.value);
+
+      //session storage
+      sessionStorage.setItem("name", name.current.value);
+      sessionStorage.setItem("email", email.current.value);
+      sessionStorage.setItem("password", hashedPassword);
+      sessionStorage.setItem("signUp", email.current.value);
+      sessionStorage.setItem("especialidade", especialidade.current.value);
   
       alert("Account created successfully!!");
       window.location.reload();
